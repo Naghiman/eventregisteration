@@ -7,15 +7,15 @@ import javax.persistence.OneToMany;
 import javax.persistence.Id;
 
 @Entity
-public class RegisterationManager{
-   private Set<Registeration> registeration;
+public class RegistrationManager{
+   private Set<Registration> registeration;
    
    @OneToMany(mappedBy="registerationManager" , cascade={CascadeType.ALL})
-   public Set<Registeration> getRegisteration() {
+   public Set<Registration> getRegisteration() {
       return this.registeration;
    }
    
-   public void setRegisteration(Set<Registeration> registerations) {
+   public void setRegisteration(Set<Registration> registerations) {
       this.registeration = registerations;
    }
    

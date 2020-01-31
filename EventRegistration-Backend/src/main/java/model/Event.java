@@ -9,14 +9,14 @@ import java.sql.Time;
 
 @Entity
 public class Event{
-   private Set<Registeration> registeration;
+   private Set<Registration> registeration;
    
    @OneToMany(mappedBy="event" )
-   public Set<Registeration> getRegisteration() {
+   public Set<Registration> getRegisteration() {
       return this.registeration;
    }
    
-   public void setRegisteration(Set<Registeration> registerations) {
+   public void setRegisteration(Set<Registration> registerations) {
       this.registeration = registerations;
    }
    

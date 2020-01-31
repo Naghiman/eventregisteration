@@ -4,15 +4,15 @@ import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Registeration{
-   private RegisterationManager registerationManager;
+public class Registration{
+   private RegistrationManager registerationManager;
    
    @ManyToOne(optional=false)
-   public RegisterationManager getRegisterationManager() {
+   public RegistrationManager getRegisterationManager() {
       return this.registerationManager;
    }
    
-   public void setRegisterationManager(RegisterationManager registerationManager) {
+   public void setRegisterationManager(RegistrationManager registerationManager) {
       this.registerationManager = registerationManager;
    }
    
